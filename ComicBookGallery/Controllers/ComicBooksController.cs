@@ -1,5 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace ComicBookGallery.Controllers
 {
@@ -8,16 +7,7 @@ namespace ComicBookGallery.Controllers
         public ActionResult Detail()
         {
 
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
-            {
-                return new RedirectResult("/");
-            }
-
-            return new ContentResult()
-            {
-
-                Content = "Hello from the ComicBooksController"
-            };
+            return View();
 
         }
 
