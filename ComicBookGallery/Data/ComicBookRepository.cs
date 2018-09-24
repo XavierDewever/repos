@@ -6,6 +6,7 @@ namespace ComicBookGallery.Data
     {
 
         private static ComicBook[] _comicBooks = new ComicBook[]
+
     {
     new ComicBook()
     {
@@ -56,6 +57,10 @@ namespace ComicBookGallery.Data
     }
 };
 
+        public ComicBook[] GetComicBooks()
+        {
+            return _comicBooks;
+        }
 
         public ComicBook GetComicBook(int id)
         {
