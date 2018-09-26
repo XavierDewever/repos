@@ -16,5 +16,11 @@ namespace XrnCourse.FormsHello
 		{
 			await DisplayAlert("Alert", "Hello there!", "Hi!");
 		}
-	}
+
+        private async void btnGoBack_Clicked(object sender, System.EventArgs e)
+        {
+            if (await DisplayAlert("Going back", "Wanne go back?", "Yep", "No, wait!"))
+                await Navigation.PopAsync(true);
+        }
+    }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -10,8 +9,8 @@ namespace XrnCourse.FormsHello
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            //wrap the MainPage in a NavigationPage
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
